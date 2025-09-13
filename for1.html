@@ -1,0 +1,115 @@
+<!DOCTYPE html> <!-- Declares this is an HTML5 document -->
+<html lang="en"> <!-- Sets the language of the document to English -->
+<head>
+  <meta charset="UTF-8" /> <!-- Sets character encoding to UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Makes site responsive on all devices -->
+  <title>Forest</title> <!-- Title shown on the browser tab -->
+
+  <!-- Link to Font Awesome for icons like user, info-circle, briefcase -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- Internal CSS starts here -->
+  <style>
+    body {
+      margin: 0; /* Removes default browser margin */
+      padding: 0; /* Removes default padding */
+      font-family: 'Segoe UI', sans-serif; /* Sets default font */
+      background: url('forest4.jpg') no-repeat center center fixed; /* Adds background image and fixes its position */
+      background-size: cover; /* Ensures image covers entire screen */
+      color: #fff; /* Sets default text color to white */
+    }
+
+    .navbar {
+      background: #205030cc; /* Dark green background with transparency */
+      padding: 12px 32px; /* Adds padding inside the navbar */
+      display: flex; /* Uses flex layout */
+      justify-content: space-between; /* Places title left, links right */
+      align-items: center; /* Vertically centers items */
+      position: sticky; /* Makes navbar stick to top when scrolling */
+      top: 0; /* Navbar sticks to top edge */
+      z-index: 100; /* Keeps navbar on top of all elements */
+    }
+
+    .navbar-title {
+      font-size: 1.8em; /* Font size for title */
+      font-weight: bold; /* Bold text */
+      color: #a8ff60; /* Light green color */
+      letter-spacing: 2px; /* Adds space between letters */
+    }
+
+    .navbar-links a {
+      margin-left: 20px; /* Adds space between navbar links */
+      color: #fff; /* Link text color white */
+      text-decoration: none; /* Removes underline */
+      font-size: 1.1em; /* Increases font size */
+      transition: color 0.3s ease; /* Smooth color change on hover */
+    }
+
+    .navbar-links a:hover {
+      color: #a8ff60; /* Changes color when mouse hovers */
+    }
+
+    .centered-text {
+      text-align: center; /* Centers the text */
+      position: absolute; /* Absolutely positions the text */
+      top: 50%; /* Moves down 50% from top */
+      left: 50%; /* Moves 50% from left */
+      transform: translate(-50%, -50%); /* Perfectly centers the box */
+      animation: fadeIn 2s ease-in-out forwards; /* Adds fade-in animation */
+      opacity: 0; /* Starts invisible */
+    }
+
+    .centered-text h1 {
+      font-size: 4em; /* Large font for heading */
+      text-shadow: 2px 4px 10px #000; /* Adds shadow for visibility */
+      letter-spacing: 8px; /* Spacing between characters */
+    }
+
+    .centered-text p {
+      font-size: 1.2em; /* Paragraph font size */
+      margin-top: 10px; /* Space above paragraph */
+      letter-spacing: 2px; /* Letter spacing */
+      text-shadow: 1px 2px 6px #000; /* Shadow for better contrast */
+    }
+
+    footer {
+      background: #205030cc; /* Dark green semi-transparent background */
+      color: #fff; /* White text */
+      text-align: center; /* Centers text */
+      padding: 16px; /* Padding inside footer */
+      position: fixed; /* Footer stays at bottom of screen */
+      width: 100%; /* Full width */
+      bottom: 0; /* Fixes footer to bottom */
+      font-size: 1em; /* Font size */
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translate(-50%, -60%); } /* Start state: invisible, slightly above */
+      to   { opacity: 1; transform: translate(-50%, -50%); } /* End state: visible and centered */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-title">Forest</div> <!-- Title on the left -->
+    <div class="navbar-links"> <!-- Links on the right -->
+      <a href="forest1.html"><i class="fas fa-user"></i> Join</a> <!-- Font Awesome user icon -->
+      <a href="about.html"><i class="fas fa-info-circle"></i> About</a> <!-- Info icon -->
+      <a href="#"><i class="fas fa-briefcase"></i> Service</a> <!-- Briefcase icon -->
+    </div>
+  </nav>
+
+  <!-- Centered animated text -->
+  <div class="centered-text">
+    <h1>Forest</h1> <!-- Main heading -->
+    <p>Discover the beauty and peace of nature</p> <!-- Subtitle -->
+  </div>
+
+  <!-- Sticky footer -->
+  <footer>
+    &copy; 2025 Forest Website. All rights reserved. <!-- Copyright -->
+  </footer>
+</body>
+</html>
